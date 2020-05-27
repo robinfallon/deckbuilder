@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="grocery.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="grocery.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <form id="new-grocery">
+        <label for="grocery-name">Item Name</label>
+        <input type="text" id="grocery-name" placeholder="Item Name">
+        <label for="grocery-price">Item Price (in whole pennies, e.g. $4.39 would be 439)</label>
+        <input type="number" id="grocery-price" min="0" value="0">
+        <button>Add to List</button>
+      </form>
+      <section class="grocery-list">
+
+      </section>
+    </div>
+  </body>
+</html>

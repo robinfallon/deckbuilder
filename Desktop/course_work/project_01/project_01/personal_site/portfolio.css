@@ -1,0 +1,44 @@
+
+body {
+    background: #DAE2F8;  
+    background: -webkit-linear-gradient(to left, #D6A4A4, #DAE2F8);  
+    background: linear-gradient(to left, #D6A4A4, #DAE2F8);    
+}
+
+header {
+    color: darkslategray;
+    font-size: 20px;
+    background: #DAE2F8;  
+    background: -webkit-linear-gradient(to left, #D6A4A4, #DAE2F8); 
+    background: linear-gradient(to left, #D6A4A4, #DAE2F8); 
+}
+
+.links {
+    float: right;
+    font-family: font-family: 'Merriweather', serif;
+    font-size: 30px;
+}
+
+.name {
+    color: gray;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 45px;
+    padding-left: 55;
+    padding-top: 20;
+}
+ .opener {
+    font-family: 'Homemade Apple', cursive;
+    padding-left: 20px;
+ }
+
+ .project-name {
+    font-family: 'Homemade Apple', cursive;
+    padding-left: 20px;
+ }
+ footer {
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    padding bottom: 0;
+ }
+
+

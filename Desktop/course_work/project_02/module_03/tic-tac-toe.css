@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgoldenrodyellow;
+}
+
+.board {
+    display: flex;
+    height: 360px;
+    width: 360px;
+    flex-wrap: wrap;
+}
+
+
+.cell {
+    background-color: red;
+    flex-basis: 120px;
+    border: white 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell:nth-child(3n+2) {
+    background-color: green;
+}
+
+.cell:nth-child(n+4) {
+    background-color: violet;
+}
+
+.cell:nth-child(-n+6) {
+    background-color: cornflowerblue;
+}

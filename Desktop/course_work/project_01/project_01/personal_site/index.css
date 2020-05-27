@@ -1,0 +1,84 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: #DAE2F8;  
+    background: -webkit-linear-gradient(to left, #D6A4A4, #DAE2F8);  
+    background: linear-gradient(to left, #D6A4A4, #DAE2F8);
+    padding-top: 0;
+}
+
+div {
+    background-color: lightgrey;
+    width: 700px;
+    border: 15px solid gray;
+    padding: 50px;
+    margin: 20px;
+  }
+
+.name {
+    color: gray;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 45px;
+    padding-left: 35;
+    padding-top: 10;
+}
+
+.links {
+    float: right;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Merriweather', serif;
+    font-size: 30;
+}
+
+body {
+    background: #DAE2F8;  
+    background: -webkit-linear-gradient(to left, #D6A4A4, #DAE2F8);  
+    background: linear-gradient(to left, #D6A4A4, #DAE2F8); 
+    
+}
+
+main {
+    border: 3px solid rgb(129, 64, 64);
+    background-color: rgb(145, 99, 99);
+    box-shadow: 0 -2px 4px -2px rgb(85, 47, 47);
+    padding: 10 10 10;
+}
+
+.first {
+    color: gray;
+    padding: 5 10 0;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.second {
+    color: gray;
+    padding: 5 10 0;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+
+.third {
+    color: gray;
+    padding: 5 10 0;
+    font-family: 'Homemade Apple', cursive;
+}
+
+footer {
+    border: 3px solid rgb(129, 64, 64);
+    background-color: rgb(180, 133, 135);
+    box-sizing: border-box;
+    padding top: 3px;
+    padding bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px -2px rgb(85, 47, 47);
+    font-family: 'Homemade Apple', cursive;
+}
+
+
+
+ 

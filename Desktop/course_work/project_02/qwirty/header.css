@@ -1,0 +1,107 @@
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(62, 60, 70);
+    justify-content: space-between;
+    color: white;
+}
+
+.main-nav > .full-width {
+    display: none;
+}
+
+.main-nav > .short-width {
+    display: flex;
+}
+
+.horizontal {
+    color: orange;
+    float: left;
+}
+
+a {
+    text-transform: uppercase;
+    font-family: "Dosis";
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-color: rgb(152, 196, 202);
+}
+
+.sub-nav {
+    display: flex;
+    background-color: gray;
+    padding: 10px;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    height: 45px;
+    margin: 35 auto;
+}
+
+.search-form > input {
+    width: 100%;
+}
+
+.search-form > button {
+    color: powderblue;
+    border-color: rgb(62, 60, 70);
+    background-color: rgb(62, 60, 70);
+}
+
+@media screen and (min-width: 768px) {
+    .main-nav > .full-width {
+        display: flex;
+    }
+}
+
+.nav-list {
+     display: flex;
+     flex: row;
+     padding: 5px;
+     border-right: 5px;
+}
+
+.nav-list li {
+    margin-left: 105px;
+}
+
+.nav-list li:last-of-type a {
+     border-right: none;
+}
+
+.company-name {
+     color: white;
+     font-size: 50px;
+     padding: 30px;
+}
+
+div {
+    background-color: red;
+    padding: 10px;
+    margin: 20;
+    width: 350px;
+    height: 50px;
+}
+
+.credit-offer {
+    margin: 0 auto;
+    color: white;
+}
+
+.material-icons {
+    background-color: rgb(62, 60, 70);
+}
+
+/* .horizontal nav-list {
+    color: 
+} */

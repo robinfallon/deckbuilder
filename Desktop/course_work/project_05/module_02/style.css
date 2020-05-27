@@ -1,0 +1,15 @@
+/*---------------COLOR SLIDER-------------------*/
+.controls {
+    width: 480px;
+  }
+  
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .preview {
+    width: 480px;
+    height: 480px;
+    margin-top: 24px;
+  }

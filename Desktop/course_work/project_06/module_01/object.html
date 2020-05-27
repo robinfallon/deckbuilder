@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="object.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="object.js"></script>
+  </head>
+  <body>
+    <main id="app">
+      <section id="inputs">
+        <fieldset id="backgroundColor">
+          <h3>Background Color</h3>
+          <div>
+            <input name="backgroundColor" type="radio" id="bg-red" value="red">
+            <label for="bg-red">Red</label>
+
+            <input name="backgroundColor" type="radio" id="bg-orange"value="orange">
+            <label for="bg-orange">Orange</label>
+
+            <input name="backgroundColor" type="radio" id="bg-yellow"value="yellow">
+            <label for="bg-yellow">Yellow</label>
+          </div>
+        </fieldset>
+        <fieldset id="height">
+          <h3>Height</h3>
+          <input name="height" type="range" min="120" max="480" value="360">
+        </fieldset>
+        <fieldset id="borderRadius">
+          <h3>Border Radius</h3>
+          <input name="borderRadius" type="range" min="0" max="50" value="0">
+        </fieldset>
+        <fieldset id="fontFamily">
+          <h3>Font Family</h3>
+          <input name="fontFamily" type="text" placeholder="font family, e.g. sans-serif, monospace, cursive, Arial">
+        </fieldset>
+        <fieldset id="lift">
+          <h3>Lift</h3>
+          <input name="lift" type="range" min="0" max="48" value="0">
+        </fieldset>
+      </section>
+      <section id="preview">
+        <span>Preview Box</span>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  #app {
+    display: grid;
+    grid-template-columns: 480px 1fr;
+    height: 100%;
+  }
+  
+  .host-controls {
+    height: 100%;
+    border-right: 2px solid black;
+    display: grid;
+    grid-template-rows: auto 96px 1fr;
+  }
+  
+  .guest-form {
+    grid-column: 1;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-rows: 30px 60px;
+    padding: 12px;
+  }
+  
+  .guest-form label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .guest-form input {
+    background: #ccc;
+    padding: 12px;
+  }
+  
+  .guest-count,
+  #guest-count {
+    grid-column: 1;
+  }
+  
+  .guest-count {
+    grid-row: 1;
+  }
+  
+  #guest-count  {
+    grid-row: 2;
+  }
+  
+  .guest-name,
+  #guest-name {
+    grid-column: 2 / 4;
+  }
+  
+  .guest-name {
+    grid-row: 1;
+  }
+  
+  #guest-name {
+    grid-row: 2;
+  }
+  
+  #add, #serve {
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 18px;
+    background: #333;
+    color: white;
+  }
+  
+  #add {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  
+  #serve {
+    width: calc(100% - 24px);
+    height: 60px;
+    margin: 12px;
+  }
+  
+  .guest-list {
+    background: #777;
+    padding: 12px;
+  }
+  
+  .guest-card {
+    background: #eee;
+    border: 1px solid #f82;
+    font-size: 28px;
+    padding: 12px;
+    margin-bottom: 12px;
+  }

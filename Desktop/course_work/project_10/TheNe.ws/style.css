@@ -1,0 +1,88 @@
+
+.searchArea {
+    background-color: rgb(222, 240, 247);
+}
+
+body {
+    background-color: lightblue;
+}
+
+#app {
+    background-color: lightblue;
+    padding-left: 80px;
+    padding-top: 40px;
+    padding-right: 80px;
+}
+
+h1 {
+    color: rgb(26, 67, 100);
+    font-family: 'Raleway', sans-serif;
+}
+
+label {
+    color: rgb(26, 67, 100);
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+
+#searchArea {
+    background-color: lightcoral;
+    font-style: italic;
+}
+
+#keywords {
+    color: white;
+    background-color: lightsteelblue;
+    font-weight: bold;
+}
+
+#select-category {
+    color: white;
+    background-color: rgb(243, 182, 160);
+    font-weight: bold;
+}
+
+#select-language {
+    color: white;
+    background-color: rgb(231, 143, 111);
+    font-weight: bold;
+}
+
+#select-country {
+    color: white;
+    background-color: rgb(157, 187, 170);
+    font-weight: bold;
+}
+
+#start_date {
+    color: white;
+    background-color: rgb(154, 168, 129);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#end_date {
+    color: white;
+    background-color: steelblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit {
+    background-color: lightblue;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#button {
+    color: white;
+    background-color: steelblue;
+    font-weight: bold;
+}
+
+.pagination {
+    background-color: lightblue;
+    font-weight: bold;
+    padding-bottom: 40px;
+}

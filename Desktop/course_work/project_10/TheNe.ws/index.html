@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ne.ws</title>
+    <script defer src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <form id="userForm">
+            <h1>
+                Get the latest news
+            </h1>
+            <div class="searchArea">
+                <div>
+                    <label for="keywords">Keywords</label>
+                    <input id="keywords" type="text" placeholder="enter keywords..." />
+                </div>
+                <div>
+                    <label for="select-category">Category <span class="category"></span></label>
+                    <select name="category" id="select-category">
+                    <option value="any">Any</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="select-language">Language <span class="language"></span></label>
+                    <select name="language" id="select-language">
+                    <option value="any">Any</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="select-region">Country <span class="country"></span></label>
+                    <select name="country" id="select-country">
+                    <option value="any">Any</option>
+                    </select>
+                </div>
+                <div class="dates">
+                    <div>
+                        <label for="start_date">Start Date</label>
+                        <input type="date" id="start_date" name="start_date"/>
+                    </div>
+                    <div>
+                        <label for="end_date">End Date</label>
+                        <input type="date" id="end_date" name="end_date"/>
+                    </div>
+                </div>
+                <div id="submit">
+                    <button id="button">submit</button>
+                </div>
+                <div id="preview">
+                    <header class="pagination">
+                      <button disabled class="previous">Previous</button>
+                      <button disabled class="next">Next</button>
+                    </header>
+                    <section class="results"></section>
+                </div>
+                  <main id="feature"></main>
+                  <div class="story"></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

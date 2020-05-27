@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger's Things</title>
+    <script defer src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-----------------------HEADER------------------------->
+    <header>
+        <div class="headerBar">
+            <p>Stranger's Things</p>
+        
+            <div class="login">
+                <form class="loginForm">
+                    <input id="usernameLogin" placeholder="username" required>
+                    <input id="passwordLogin" type="password" placeholder="password" minlength="8" required>
+                    <button id="loginButton" type="submit">Login</button>
+                </form>
+
+                <!--------------MODAL------------->
+                <!--Modal code can be found @ https://www.labnol.org/code/20083-modal-popup-css-->
+                <a href="#open-modal">Sign Up!</a>
+                <div id="open-modal" class="modal-window">
+                  <div>
+                    <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                    <h1>Welcome!</h1>
+                    <div>
+                        <label for="signUpUsername">Username</label>
+							<input type="text" id="signUpUsername" required />
+
+							<label for="signUpPassword">Password</label>
+							<input type="password" id="signUpPassword" required />
+
+							<label for="passwordConf">Confirm Password</label>
+							<input type="password" id="passwordConf" required />
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------->
+
+            </div>
+        </div>
+    </header>
+<!-----------------------MAIN------------------------->
+    <div id= "main">
+        <input id="search" type="text" placeholder="Search...">
+        <button>SEARCH</button>
+
+        <div id="posts"></div>
+    </div>
+            
+    <div>
+        
+    </div>
+<!-----------------------ASIDE------------------------->
+    <div class="aside">
+        <form id="post-form">
+            <label>Item Title</label>
+            <input type="text" placeholder="title" id="post-title">
+            <br>
+            <label>Item Description</label>
+            <input type="text" placeholder="description" id="post-body">
+            <br>
+            <label>Item Price</label>
+            <input type="text" placeholder="price" id="post-price">
+            <br>
+            <label>Item Location</label>
+            <input type="text" placeholder="location" id="post-location">
+            <br>
+            <label>Is delivery available?</label>
+            <select id="delivery" name="willDeliver" required>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <br>
+            <button id="createUpdateButton" type="submit">Create/Update Post</button>
+        </form>
+    </div>
+
+
+
+<!--
+    <div id="nav">
+        <h2>Register</h2>
+        <div class="boxes">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        
+            <label for="pass">Password (8 characters minimum):</label>
+            <input type="password" id="pass" name="password"
+                    minlength="8" required>
+
+            <label for="passConf">password confirmation:</label>
+            <input type="password" id="passConf" name="password"
+                    minlength="8" required>
+        </div>
+        <button type="submit" value="Sign in">Submit</button>
+        <br> 
+        <label id="signup" for="modalLogin" class="button">Sign Up</label>
+    </div>
+-->
+
+<!-----------------------NAV------------------------->
+    <div id="nav">
+
+    </div>
+
+</body>
+</html>

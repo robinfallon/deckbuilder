@@ -1,0 +1,46 @@
+body {
+    font-family: 'Righteous', cursive;
+    background-color: tomato;
+    text-align: center;
+}
+
+h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    margin: 4px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+h2 {
+    margin: 2px;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-color: black;
+    background-color: thistle;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 620px;
+    height: 620px;
+    align-items: center;
+    border: 5px solid black;
+    margin: auto;
+}
+
+.mole {
+    background-image: url(https://static.miraheze.org/toxicfandomsandhatedomswiki/thumb/b/b6/Mole.jpeg/330px-Mole.jpeg);
+    background-size: cover;
+}

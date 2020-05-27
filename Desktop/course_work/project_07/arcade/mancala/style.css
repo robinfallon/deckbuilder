@@ -1,0 +1,182 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 245, 242);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #5f5b5b;
+    color: white;
+    padding-left: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.game-name {
+    letter-spacing: 2px;
+    font-size: 55px;
+    font-family: 'Righteous', cursive;
+}
+
+/*
+.instructions button {
+    display: block;
+    color: white;
+    letter-spacing: 2px;
+    background-color: #5f5b5b;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+*/
+
+#player-1, #player-2 {
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #5f5b5b;
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 25px;
+}
+
+#board > div {
+    height: 100%
+}
+
+#board {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: burlywood;
+    margin: 20px;
+    width: 1300px;
+    height: 450px;
+    box-shadow: 10px 10px 12px -6px rgb(74, 74, 141);
+}
+
+#first-column, #third-column {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#second-column {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#row-1, #row-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* horizontal axis*/
+    align-items: center; /* vertical axis */
+}
+
+#storeOne, #storeTwo {
+    height: 80%;
+    width: 80%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: rgb(153, 128, 96);
+    cursor: pointer;
+}
+
+/*
+.store-layer {
+
+}
+*/
+
+.binOne, .binTwo {
+    border-radius: 15%;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: 10px;
+    background: rgb(153, 128, 96);
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.marble-layer {
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    z-index: 2;
+    position: absolute;
+    
+}
+
+.marble-1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(97, 81, 143), orange, rgb(241, 241, 143), rgb(93, 163, 93), purple);
+    box-shadow: 0 3px 2px rgba(74, 74, 141, 0.5);
+}
+
+.marble-2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(124, 221, 104);
+    box-shadow: 0 3px 2px rgba(74, 74, 141, 0.5);
+}
+
+.marble-3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(70, 209, 179);
+    box-shadow: 0 3px 2px rgba(74, 74, 141, 0.5);
+}
+
+.marble-4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(219, 128, 23);
+    box-shadow: 0 3px 2px rgba(74, 74, 141, 0.5);
+}
+
+.store-number {
+    position: absolute;
+    visibility: hidden;
+    text-align: center;
+}
+
+.player-number {
+    position: absolute;
+    visibility: hidden;
+}
+

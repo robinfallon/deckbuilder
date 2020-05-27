@@ -1,0 +1,38 @@
+#app {
+    display: flex;
+    font-family: sans-serif;
+}
+  
+#new-grocery {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  
+    font-size: 20px;
+  
+    background: #aaa;
+}
+  
+#new-grocery input,
+#new-grocery button {
+    padding: .5em 1em;
+}
+  
+#new-grocery label,
+#new-grocery button,
+#new-grocery input {
+    margin: 0.5em;
+}
+  
+.grocery-list {
+    flex: 3;
+    margin-left: 24px;
+}
+  
+.grocery-item {
+    background: lightgreen;
+    margin-bottom: 24px;
+    padding: 24px;
+    text-align: center;
+}

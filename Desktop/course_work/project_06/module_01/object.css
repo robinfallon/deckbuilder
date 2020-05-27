@@ -1,0 +1,21 @@
+#app {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #inputs {
+    flex: 1;
+  }
+  
+  #preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+    font-size: 36px;
+  }
+  
+  input[type=range],
+  input[type=text] {
+    width: 100%;
+}

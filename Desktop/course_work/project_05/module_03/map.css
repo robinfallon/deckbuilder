@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app {
+    width: 80vmin;
+    height: 80vmin;
+    margin: 0 calc(50vw - 40vmin);
+    background-image: url("https://drive.google.com/uc?id=1zeYjIhHNNMy-c-uAjJ933GGddslDvSn8");
+    background-size: cover;
+    position: relative;
+  }
+  
+  .pin {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border: 2px solid black;
+    background: orange;
+    border-radius: 50% 50% 50% 0;
+    transform: translate(-50%, -100%) rotate(-45deg);
+  }
+  
+  body {
+    text-align: center;
+  }

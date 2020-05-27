@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+    display: flex;
+}
+
+.categories {
+    flex-basis: 256px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-left: 10px;
+}
+
+.categories > a {
+    font-family: "Dosis";
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(84, 118, 141);
+    color: white;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+a:hover {
+    background-color: orange;
+    box-shadow: 0 2px 5px -2px black;
+    color: black;
+}
+

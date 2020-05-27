@@ -1,0 +1,40 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(62, 60, 70);
+    padding: 18px;
+    font-family: "Dosis";
+    justify-content: center;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    clear: right;
+    padding: 40px;
+}
+
+h2 {
+    border-bottom: white;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 22px;
+    letter-spacing: 4;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 15;
+    margin-top: 9px;
+}
+
+:hover {
+    border-bottom: white, 1px;
+    margin-bottom: 9px;
+    color: black;
+}

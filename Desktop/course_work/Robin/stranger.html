@@ -1,0 +1,147 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script defer src="app.min.js"></script>
+		<title>Stranger Things</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="__wrapper flex two">
+				<h1>
+					Stranger Things
+				</h1>
+				<div class="login">
+					<form class="__form" id="auth-form">
+						<input id="username" placeholder="username" required />
+						<input id="password" type="password" placeholder="password" required />
+						<label id="signup" for="modal_1" class="button">Sign Up</label>
+						<button id="__login-button" type="submit">Login</button>
+					</form>
+				</div>
+				<div class="user">
+					<div class="__user_wrapper">
+						<i class="material-icons account_box">account_box</i>
+						<span id="__username"></span>
+						<i class="material-icons" id="menu">expand_more</i>
+					</div>
+					<div class="__menu_wrapper">
+						<label for="modal_2" class="button stack" id="create_post">
+							<i class="material-icons">add_comment</i>
+							Create Post
+						</label>
+						<span class="button stack" id="view_posts">
+							<i class="material-icons">insert_comment</i>
+							View Posts
+						</span>
+						<span class="button stack" id="view_messages">
+							<i class="material-icons">chat</i>
+							View Messages
+						</span>
+						<span class="button stack" id="logout">
+							<i class="material-icons">power_settings_new</i>
+							Logout
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="__search_wrapper">
+				<input id="search" type="text" placeholder="Search..." />
+			</div>
+		</header>
+		<main>
+			<div class="back">
+				<button id="back">Back</button>
+			</div>
+			<div class="__spinner">
+				<svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+					<circle
+						class="path"
+						fill="none"
+						stroke-width="6"
+						stroke-linecap="round"
+						cx="33"
+						cy="33"
+						r="30"
+					></circle>
+				</svg>
+			</div>
+			<div id="posts" class="flex two-custom"></div>
+			<aside></aside>
+			<div class="modal">
+				<input id="modal_1" type="checkbox" />
+				<label for="modal_1" class="overlay"></label>
+				<article>
+					<header>
+						<h3>Sign Up</h3>
+						<label for="modal_1" class="close">&times;</label>
+					</header>
+					<form id="signup-form">
+						<span id="__error"></span>
+						<section class="content">
+							<label for="sign_username">Username</label>
+							<input type="text" id="sign_username" required />
+
+							<label for="sign_password">Password</label>
+							<input type="password" id="sign_password" required />
+
+							<label for="sign_verify_password">Verify Password</label>
+							<input type="password" id="sign_verify_password" required />
+						</section>
+						<footer class="clear">
+							<button class="right">Sign Up</button>
+						</footer>
+					</form>
+				</article>
+			</div>
+			<div class="modal">
+				<input id="modal_2" type="checkbox" />
+				<label for="modal_2" class="overlay"></label>
+				<article>
+					<header>
+						<h3>Create Post</h3>
+						<label for="modal_2" class="close">&times;</label>
+					</header>
+					<form id="create-post">
+						<span id="__error"></span>
+						<label for="title">Title</label>
+						<input type="text" id="title" name="title" required />
+						<label for="description">Description</label>
+						<textarea id="description" name="description" required></textarea>
+						<label for="price">Price</label>
+						<input type="text" id="price" name="price" required />
+						<label for="delivery">Delivery Available</label>
+						<select id="delivery" name="willDeliver" required>
+							<option value="false">No</option>
+							<option value="true">Yes</option>
+						</select>
+						<footer class="clear">
+							<button class="right">Submit</button>
+						</footer>
+					</form>
+				</article>
+			</div>
+			<div class="modal">
+				<input id="modal_3" type="checkbox" />
+				<label for="modal_3" class="overlay"></label>
+				<article>
+					<header>
+						<h3>Send Message</h3>
+						<label for="modal_3" class="close">&times;</label>
+					</header>
+					<form id="send-message">
+						<label for="message">Message</label>
+						<input name="message" id="message" required />
+						<footer class="clear">
+							<button class="right">Submit</button>
+						</footer>
+					</form>
+				</article>
+			</div>
+		</main>
+	</body>
+</html>

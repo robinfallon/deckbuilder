@@ -1,0 +1,56 @@
+.name {
+    color: gray;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 45px;
+    padding-left: 55;
+    padding-top: 20;
+}
+
+.links{
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    float: right;
+}
+
+div {
+    background-color: lightgrey;
+    width: 700px;
+    border: 15px solid gray;
+    padding: 50px;
+    margin: 20px;
+    font-family: 'Homemade Apple', cursive;
+}
+
+footer {
+    background-color: lightgrey;
+    width: 760px;
+    border: 15px solid gray;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    padding bottom: 0;
+}
+
+body {
+    background: #DAE2F8;  
+    background: -webkit-linear-gradient(to left, #D6A4A4, #DAE2F8);  
+    background: linear-gradient(to left, #D6A4A4, #DAE2F8);
+}
+
+.first {
+    color: darkslategray;
+    font-family: 'Merriweather', serif;
+}
+
+.second {
+    color: darkslategray;
+}
+
+.third {
+    color: darkslategray;
+}
+
+.fourth {
+    color: darkslategray;
+}
